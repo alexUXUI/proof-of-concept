@@ -14,22 +14,45 @@ var app = angular.module('app', ['ui.router'])
 
     .state('parent.viewOne', {
       url: "/viewOne",
-      template: "<one></one>"
+      template: "<one></one>",
+      controller: ['$scope', '$state', '$stateParams',
+        function ($scope, $state, $stateParams) {
+        }
+      ]
     })
 
     .state('parent.viewTwo', {
       url: "/viewTwo",
-      template: "<two></two>"
+      template: "<two></two>",
+      controller: ['$scope', '$state', '$stateParams',
+        function ($scope, $state, $stateParams) {
+        }
+      ]
     })
 
     .state('parent.viewThree', {
       url: "/viewThree",
-      template: "<three></three>"
+      template: "<three></three>",
+      controller: ['$scope', '$state', '$stateParams',
+        function ($scope, $state, $stateParams) {
+        }
+      ]
     })
 
     .state('home', {
       url: "/",
-      templateUrl: "./index.html"
+      templateUrl: "./index.html",
+      controller: ['$scope', '$state', '$stateParams',
+        function ($scope, $state, $stateParams) {
+        }
+      ]
     })
 
 }])
+
+.run(['$rootScope', '$state', '$stateParams',
+  function ($rootScope, $state, $stateParams) {
+    $rootScope.$state = $state;
+    $rootScope.$stateParams = $stateParams;
+  }
+])
