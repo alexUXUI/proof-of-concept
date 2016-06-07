@@ -9,6 +9,10 @@ http://www.ng-newsletter.com/posts/angular-ui-router.html
 
 http://code.tutsplus.com/tutorials/mastering-angularjs-directives--cms-22511
 
+http://moduscreate.com/a-direct-dive-into-angular-directives/
+
+http://fdietz.github.io/recipes-with-angular-js/directives/directive-to-directive-communication.html
+
 ### Show me the working code!
 
 ```
