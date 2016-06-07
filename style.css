@@ -1,24 +1,66 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: blue;
+}
+
 .view-one-text {
-  color: red;
-  background-color: blue;
+  color: black;
+  /*background-color: slategray;*/
 }
 
 .view-two-text {
-  color: green;
-  background-color: pink;
+  color: dimgray;
+  /*background-color: darkslategray;*/
 }
 
 .view-three-text {
-  color: aqua;
-  background-color: sienna;
+  color: lightslategray;
 }
 
 .parent {
-  background-color: slategray;
-  height: 80vh;
+  background-color: gainsboro;
+  height: 40vh;
   width: 80vw;
+  padding: 2%;
+  margin: auto;
 }
 
 .active {
-  background-color: black;
+  background-color: white;
+  color: black;
 }
+
+pre {
+  overflow: none;
+  text-overflow: ellipsis;
+}
+
+nav {
+  height: 5vh;
+  background-color: #424242;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
