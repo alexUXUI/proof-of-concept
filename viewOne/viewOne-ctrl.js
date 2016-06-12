@@ -2,27 +2,30 @@
 
 app.controller('viewOne', function($stateParams, $state, $scope, $http){
 
-  $scope.post = {}
-  $scope.posts = []
+  let post    = {}
+  let s       = $scope
+      s.p     = post
+      s.posts = []
 
-  $scope.getReddit = (query) => {
+  s.getReddit = (query) => {
+    s.posts = []
     $http.get('http://www.reddit.com/search.json?q=' + query).then((data) => {
       let d = data.data.data.children
       for(var i = 0; i < d.length; i = i + 1) {
-        $scope.post = d[i].data
-        $scope.post.title = d[i].data.title
-        $scope.post.author = d[i].data.author
-        $scope.post.score = d[i].data.score
-        $scope.post.thumbnail = d[i].data.thumbnail
-        $scope.post.url = d[i].data.url
-        $scope.post.ups = d[i].data.ups
-        $scope.posts.push($scope.post)
+        post           = d[i].data
+        post.title     = d[i].data.title
+        post.author    = d[i].data.author
+        post.score     = d[i].data.score
+        post.thumbnail = d[i].data.thumbnail
+        post.url       = d[i].data.url
+        post.ups       = d[i].data.ups
+        s.posts.push(post)
       }
     })
   }
 
-  $scope.blowAway = () => {
-    $scope.thisPost().delete();
+  s.blowAway = () => {
+    s.thisPost().delete();
   }
 
 })
