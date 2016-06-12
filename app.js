@@ -9,7 +9,7 @@ var app = angular.module('app', ['ui.router'])
 
     .state('parent', {
       url: "/parent",
-      templateUrl: "./parent/parent.html",
+      template: "<parent></parent>",
     })
 
     .state('parent.viewOne', {
@@ -47,6 +47,8 @@ var app = angular.module('app', ['ui.router'])
         }
       ]
     })
+
+    // $urlRouterProvider.otherwise('/parent');
 
 }])
 

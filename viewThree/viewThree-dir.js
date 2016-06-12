@@ -6,6 +6,6 @@ app.directive('three', function() {
         scope: {
             data: '='
         },
-        templateUrl: '../templates/viewThree.html'
+        templateUrl: './viewThree/viewThree.html'
     }
 })
