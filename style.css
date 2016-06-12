@@ -17,6 +17,55 @@ a:hover {
   color: black;
 }
 
+li {
+  list-style: none;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #ececec;
+  margin: auto;
+}
+
+.grid-item {
+  height: 250px;
+  width: 250px;
+  margin: .75%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  -webkit-box-shadow: -1px 1px 10px -2px rgba(0,0,0,0.71);
+  -moz-box-shadow: -1px 1px 10px -2px rgba(0,0,0,0.71);
+  box-shadow: -1px 1px 10px -2px rgba(0,0,0,0.71);
+}
+
+.search-bar {
+  height: 5vh;
+  background-color: black;
+  width: 100vw;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 9999;
+  margin-top: 5vh;
+  border: none;
+}
+
+input[type="text"]::placeholder {
+  color: white;
+}
+
+.title {
+  font-size: 1em;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
 .view-two-text {
   color: dimgray;
 }
@@ -29,7 +78,6 @@ a:hover {
   background-color: gainsboro;
   height: 100vh;
   width: 100vw;
-  padding: 2%;
   margin: auto;
   position: relative;
   overflow-y: scroll;

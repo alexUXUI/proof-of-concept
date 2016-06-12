@@ -1,10 +1,10 @@
-# proof-of-concept
-proving that you can pass a directive to a $state.view as a template
+# Reddit App
+Tailor the reddit experience to your tastes
 
 ## Useful Docs:
 
 >
-- Ultimate guide: http://www.angularjsbook.com/angular-basics/chapters/services/ 
+- Ultimate guide: http://www.angularjsbook.com/angular-basics/chapters/services/
 - https://github.com/angular-ui/ui-router/wiki/Quick-Reference
 - http://codepen.io/absynce/pen/waVRew?editors=0010
 - http://www.ng-newsletter.com/posts/angular-ui-router.html
