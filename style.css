@@ -15,12 +15,10 @@ a:hover {
 
 .view-one-text {
   color: black;
-  /*background-color: slategray;*/
 }
 
 .view-two-text {
   color: dimgray;
-  /*background-color: darkslategray;*/
 }
 
 .view-three-text {
@@ -61,6 +59,5 @@ nav a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 25%;
 }
-
