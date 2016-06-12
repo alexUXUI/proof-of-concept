@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-  color: blue;
+  color: gray;
 }
 
 .view-one-text {
@@ -27,31 +27,30 @@ a:hover {
 
 .parent {
   background-color: gainsboro;
-  height: 40vh;
-  width: 80vw;
+  height: 100vh;
+  width: 100vw;
   padding: 2%;
   margin: auto;
+  position: relative;
+  overflow-y: scroll;
 }
 
 .active {
-  background-color: white;
+  background-color: seashell;
   color: black;
-}
-
-pre {
-  overflow: none;
-  text-overflow: ellipsis;
 }
 
 nav {
   height: 5vh;
   background-color: #424242;
-  width: 80vw;
+  width: 100vw;
   margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  z-index: 999;
 }
 
 nav a {
