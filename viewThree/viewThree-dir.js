@@ -1,11 +1,8 @@
 var app = angular.module('app');
 
 app.directive('three', function() {
-    return {
-        restrict: 'E',
-        scope: {
-            data: '='
-        },
-        templateUrl: './viewThree/viewThree.html'
-    }
+  return {
+    restrict: 'E',
+    templateUrl: './viewThree/viewThree.html'
+  }
 })

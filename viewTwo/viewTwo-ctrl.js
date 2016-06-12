@@ -1,11 +1,3 @@
-var app = angular.module('app');
-
-app.directive('two', function() {
-    return {
-        restrict: 'E',
-        scope: {
-            data: '='
-        },
-        templateUrl: '../viewTwo.html'
-    }
+app.controller('vieTwo', function($stateParams, $state, $scope){
+  $scope.yo = "This is viewTwo scope"
 })

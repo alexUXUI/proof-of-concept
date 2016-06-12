@@ -3,9 +3,7 @@ var app = angular.module('app');
 app.directive('parent', function() {
     return {
         restrict: 'E',
-        scope: {
-            data: '='
-        },
+        controller: 'parent',
         templateUrl: './parent/parent.html'
     }
 })

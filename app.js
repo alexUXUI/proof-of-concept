@@ -3,52 +3,42 @@
 // import viewOne from './viewOne/viewOne-dir.js'.viewOne;
 
 var app = angular.module('app', ['ui.router'])
-    .config(['$stateProvider', function ($stateProvider) {
+  .config(['$stateProvider', function ($stateProvider) {
 
-    $stateProvider
+  $stateProvider
 
-    .state('parent', {
-      url: "/parent",
-      template: "<parent></parent>",
-    })
+  .state('parent', {
+    url: "/parent",
+    template: "<parent></parent>",
+    controller: "parent"
+  })
 
-    .state('parent.viewOne', {
-      url: "/viewOne",
-      template: "<one></one>",
-      controller: ['$scope', '$state', '$stateParams',
-        function ($scope, $state, $stateParams) {
-        }
-      ]
-    })
+  .state('parent.viewOne', {
+    url: "/viewOne",
+    template: "<one></one>",
+    controller: "viewOne"
+  })
 
-    .state('parent.viewTwo', {
-      url: "/viewTwo",
-      template: "<two></two>",
-      controller: ['$scope', '$state', '$stateParams',
-        function ($scope, $state, $stateParams) {
-        }
-      ]
-    })
+  .state('parent.viewTwo', {
+    url: "/viewTwo",
+    template: "<two></two>",
+    controller: "viewTwo"
+  })
 
-    .state('parent.viewThree', {
-      url: "/viewThree",
-      template: "<three></three>",
-      controller: ['$scope', '$state', '$stateParams',
-        function ($scope, $state, $stateParams) {
-        }
-      ]
-    })
+  .state('parent.viewThree', {
+    url: "/viewThree",
+    template: "<three></three>",
+    controller: "viewThree"
+  })
 
-    .state('home', {
-      url: "/",
-      templateUrl: "./index.html",
-      controller: ['$scope', '$state', '$stateParams',
-        function ($scope, $state, $stateParams) {
-        }
-      ]
-    })
-
-    // $urlRouterProvider.otherwise('/parent');
+  // .state('home', {
+  //   url: "/",
+  //   templateUrl: "./index.html",
+  //   controller: ['$scope', '$state', '$stateParams',
+  //     function ($scope, $state, $stateParams) {
+  //     }
+  //   ]
+  // })
 
 }])
 
