@@ -4,6 +4,7 @@ Tailor the reddit experience to your tastes
 ## Useful Docs:
 
 >
+- every directive property: https://docs.angularjs.org/api/ng/service/$compile
 - Ultimate guide: http://www.angularjsbook.com/angular-basics/chapters/services/
 - https://github.com/angular-ui/ui-router/wiki/Quick-Reference
 - http://codepen.io/absynce/pen/waVRew?editors=0010
